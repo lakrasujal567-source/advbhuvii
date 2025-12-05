@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adv. Bhuvnesh | Delhi Districts & High Court</title>
+  <meta name="description" content="Official website of Adv. Bhuvnesh, practising in Delhi District Courts and High Court. Expert in cheque bounce, family, civil, criminal and other matters.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #050509;
+      --bg-soft: #0b0c12;
+      --bg-card: #10121c;
+      --accent: #f9b84a;
+      --accent-soft: rgba(249, 184, 74, 0.12);
+      --accent-strong: #ffcf6a;
+      --text-main: #f9fafb;
+      --text-muted: #a7b0c6;
+      --border-soft: rgba(148,163,184,0.4);
+      --shadow-soft: 0 20px 60px rgba(0,0,0,0.7);
+      --radius-xl: 22px;
+      --radius-full: 999px;
+      --max-width: 1120px;
+      --transition-fast: 0.25s ease;
+      --transition-slow: 0.4s ease;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top, #151627 0, #050509 46%, #020309 100%);
+      color: var(--text-main);
+      -webkit-font-smoothing: antialiased;
+      scroll-behavior: smooth;
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .page-shell {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper {
+      width: 100%;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 0 1.4rem;
+    }
+
+    /* HEADER */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      backdrop-filter: blur(16px);
+      background: linear-gradient(to bottom, rgba(5,5,9,0.98), rgba(5,5,9,0.9), transparent);
+      border-bottom: 1px solid rgba(148,163,184,0.2);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.9rem 0;
+      gap: 1rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.7rem;
+    }
+
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 16px;
+      background: radial-gradient(circle at 10% 0, var(--accent-strong), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 14px 40px rgba(249,184,74,0.4);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .logo-mark::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: conic-gradient(from 210deg, rgba(0,0,0,0.1), transparent 40%, rgba(0,0,0,0.6));
+      mix-blend-mode: soft-light;
+    }
+
+    .logo-mark span {
+      font-family: "DM Serif Display", serif;
+      font-size: 1.2rem;
+      letter-spacing: 0.08em;
+    }
+
+    .logo-text-main {
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .logo-text-sub {
+      font-size: 0.75rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.4rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      position: relative;
+      color: var(--text-muted);
+      transition: color var(--transition-fast);
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.3rem;
+      width: 0;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(to right, var(--accent), var(--accent-strong));
+      transition: width var(--transition-fast);
+    }
+
+    .nav-links a:hover {
+      color: var(--text-main);
+    }
+    .nav-links a:hover::after { width: 18px; }
+
+    .nav-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 0.85rem;
+    }
+
+    .nav-cta span {
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .btn {
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(249,184,74,0.95);
+      padding: 0.45rem 1.15rem;
+      font-size: 0.86rem;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      background: radial-gradient(circle at top left, rgba(249,184,74,0.2), rgba(249,184,74,0.05));
+      color: var(--text-main);
+      box-shadow: 0 14px 40px rgba(249,184,74,0.26);
+      cursor: pointer;
+      transition: transform var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast), border-color var(--transition-fast);
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      border-color: var(--accent-strong);
+      box-shadow: 0 18px 60px rgba(249,184,74,0.35);
+      background: radial-gradient(circle at top left, rgba(249,184,74,0.3), rgba(249,184,74,0.08));
+    }
+
+    .btn span.icon { font-size: 1rem; }
+
+    .btn-secondary {
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(148,163,184,0.45);
+      padding: 0.45rem 1.15rem;
+      font-size: 0.86rem;
+      background: radial-gradient(circle at top, rgba(15,23,42,1), rgba(15,23,42,0.9));
+      color: var(--text-muted);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    .btn-secondary:hover {
+      color: var(--text-main);
+      border-color: rgba(148,163,184,0.8);
+      transform: translateY(-1px);
+    }
+
+    .hamburger {
+      display: none;
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.45);
+      background: radial-gradient(circle at top, rgba(15,23,42,0.92), rgba(15,23,42,0.7));
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      gap: 4px;
+    }
+
+    .hamburger span {
+      width: 16px;
+      height: 2px;
+      border-radius: 999px;
+      background: rgba(226,232,240,0.96);
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    .hamburger.is-open span:nth-child(1) {
+      transform: translateY(3px) rotate(45deg);
+    }
+    .hamburger.is-open span:nth-child(2) {
+      transform: translateY(-3px) rotate(-45deg);
+    }
+
+    .mobile-nav { display: none; }
+    .mobile-nav.open { display: block; }
+
+    .mobile-nav-inner {
+      border-radius: 18px;
+      border: 1px solid rgba(148,163,184,0.35);
+      background: radial-gradient(circle at top, rgba(15,23,42,0.98), rgba(15,23,42,0.95));
+      padding: 0.8rem 1rem 1rem;
+      margin-bottom: 0.5rem;
+      box-shadow: 0 18px 50px rgba(15,23,42,0.95);
+    }
+
+    .mobile-nav-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      margin-bottom: 0.7rem;
+      font-size: 0.88rem;
+    }
+
+    .mobile-nav-links a {
+      color: var(--text-muted);
+      padding: 0.3rem 0;
+    }
+
+    .mobile-nav-links a:hover { color: var(--text-main); }
+
+    .mobile-nav-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* HERO + BANNER */
+    main { flex: 1; }
+
+    .hero {
+      padding: 1.4rem 0 2.4rem;
+    }
+
+    /* Banner placeholder: just change background-image url */
+    .hero-banner-wrapper {
+      width: 100%;
+      border-radius: 24px;
+      overflow: hidden;
+      margin-bottom: 1.7rem;
+      border: 1px solid rgba(249,184,74,0.4);
+      background: #000;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .hero-banner {
+      height: 210px;
+      width: 100%;
+      background-image: linear-gradient(135deg, #0b0c14 0, #111827 35%, #f9b84a 100%);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    /* NOTE: When you have banner image, replace above with:
+       background-image: url('your-banner-image.jpg');
+    */
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+      gap: 2.4rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.22rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.45);
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      background: radial-gradient(circle at left, rgba(148,163,184,0.28), rgba(15,23,42,0.85));
+      margin-bottom: 1.3rem;
+    }
+
+    .eyebrow-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 999px;
+      background: radial-gradient(circle at center, var(--accent-strong), var(--accent));
+      box-shadow: 0 0 0 6px rgba(249,184,74,0.23);
+    }
+
+    .hero-title {
+      font-family: "DM Serif Display", serif;
+      font-size: clamp(2.1rem, 3.1vw + 1.4rem, 3.1rem);
+      line-height: 1.05;
+      letter-spacing: 0.03em;
+      margin-bottom: 0.9rem;
+    }
+
+    .hero-highlight {
+      background: linear-gradient(to right, var(--accent), var(--accent-strong));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      max-width: 30rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+      margin-bottom: 1.6rem;
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.4rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .hero-meta-block {
+      min-width: 120px;
+    }
+
+    .hero-meta-label {
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-size: 0.76rem;
+      color: rgba(148,163,184,0.95);
+      margin-bottom: 0.15rem;
+    }
+
+    .hero-meta-value {
+      font-weight: 500;
+    }
+
+    .hero-meta-accent { color: var(--accent-strong); }
+
+    .hero-card {
+      position: relative;
+      border-radius: 24px;
+      background: radial-gradient(circle at top left, rgba(249,184,74,0.06), rgba(15,23,42,0.98));
+      border: 1px solid rgba(148,163,184,0.35);
+      padding: 1.5rem 1.4rem 1.5rem;
+      box-shadow: var(--shadow-soft);
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -30%;
+      background: radial-gradient(circle at 0 0, rgba(249,184,74,0.24), transparent 60%);
+      opacity: 0.7;
+    }
+
+    .hero-card-header {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 1.1rem;
+    }
+
+    .hero-avatar {
+      width: 76px;
+      height: 76px;
+      border-radius: 999px;
+      border: 2px solid rgba(249,184,74,0.8);
+      background: radial-gradient(circle at top, rgba(249,184,74,0.16), rgba(15,23,42,0.95));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-avatar-inner {
+      position: absolute;
+      inset: 4px;
+      border-radius: inherit;
+      border: 1px solid rgba(249,184,74,0.5);
+      opacity: 0.7;
+    }
+
+    .hero-avatar-text {
+      font-family: "DM Serif Display", serif;
+      font-size: 2rem;
+      letter-spacing: 0.08em;
+    }
+
+    .hero-card-chip {
+      padding: 0.25rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.45);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background: radial-gradient(circle at top, rgba(15,23,42,1), rgba(15,23,42,0.9));
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .hero-card-chip-icon {
+      width: 10px;
+      height: 10px;
+      border-radius: 999px;
+      background: radial-gradient(circle at center, var(--accent-strong), var(--accent));
+      box-shadow: 0 0 0 4px rgba(249,184,74,0.25);
+    }
+
+    .hero-card-body {
+      position: relative;
+      z-index: 1;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .hero-card-body p { margin-bottom: 0.9rem; }
+
+    .hero-card-contact {
+      border-top: 1px dashed rgba(148,163,184,0.45);
+      padding-top: 0.8rem;
+      font-size: 0.82rem;
+    }
+
+    .hero-card-contact div { margin-bottom: 0.25rem; }
+
+    .hero-card-contact span.label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      color: rgba(148,163,184,0.95);
+      display: block;
+    }
+
+    .hero-floating {
+      position: absolute;
+      bottom: 12px;
+      right: 12px;
+      border-radius: 16px;
+      padding: 0.4rem 0.8rem;
+      background: radial-gradient(circle at top left, rgba(34,197,94,0.18), rgba(15,23,42,0.98));
+      border: 1px solid rgba(34,197,94,0.5);
+      font-size: 0.76rem;
+      color: rgba(187,247,208,0.98);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      box-shadow: 0 16px 42px rgba(21,128,61,0.6);
+    }
+
+    .hero-floating span.badge-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(187,247,208,0.8);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+    }
+
+    /* SECTION GENERAL */
+    section { padding: 2.7rem 0; }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 1.5rem;
+      margin-bottom: 1.7rem;
+    }
+
+    .section-title-block { max-width: 28rem; }
+
+    .section-kicker {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--accent-strong);
+      margin-bottom: 0.35rem;
+    }
+
+    .section-title {
+      font-size: 1.35rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.15rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* ABOUT (short) */
+    .about-card {
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(148,163,184,0.35);
+      background: radial-gradient(circle at top left, rgba(15,23,42,1), rgba(15,23,42,0.92));
+      padding: 1.4rem 1.45rem 1.5rem;
+      box-shadow: var(--shadow-soft);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    .about-highlight {
+      margin-top: 1rem;
+      border-radius: 18px;
+      border: 1px dashed rgba(148,163,184,0.5);
+      padding: 0.8rem 0.9rem;
+      font-size: 0.82rem;
+      background: radial-gradient(circle at top left, rgba(249,184,74,0.12), rgba(15,23,42,0.96));
+    }
+
+    /* SERVICES */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .service-card {
+      position: relative;
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(148,163,184,0.35);
+      background: radial-gradient(circle at top, rgba(15,23,42,1), rgba(15,23,42,0.94));
+      padding: 1.1rem 1.15rem 1.2rem;
+      box-shadow: 0 18px 55px rgba(0,0,0,0.75);
+      overflow: hidden;
+      transition: transform var(--transition-slow), box-shadow var(--transition-slow), border-color var(--transition-slow), background var(--transition-slow);
+      font-size: 0.85rem;
+    }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: -25%;
+      background: radial-gradient(circle at top left, rgba(249,184,74,0.18), transparent 65%);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition-slow);
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 24px 70px rgba(0,0,0,0.9);
+      border-color: rgba(249,184,74,0.7);
+    }
+    .service-card:hover::before { opacity: 1; }
+
+    .service-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin-bottom: 0.35rem;
+    }
+
+    .service-type {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      color: rgba(148,163,184,0.95);
+      margin-bottom: 0.25rem;
+    }
+
+    .service-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.6rem;
+      margin-top: 0.7rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      border-top: 1px dashed rgba(148,163,184,0.45);
+      padding-top: 0.55rem;
+    }
+
+    .service-phone {
+      white-space: nowrap;
+      font-weight: 500;
+      color: var(--accent-strong);
+    }
+
+    .btn-call {
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(249,184,74,0.9);
+      padding: 0.25rem 0.75rem;
+      font-size: 0.78rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+      background: radial-gradient(circle at top, rgba(249,184,74,0.22), rgba(249,184,74,0.06));
+      cursor: pointer;
+      box-shadow: 0 10px 30px rgba(249,184,74,0.25);
+      transition: var(--transition-fast);
+      color: var(--text-main);
+    }
+
+    .btn-call:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 16px 40px rgba(249,184,74,0.35);
+    }
+
+    /* APPOINTMENT / CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    .contact-card {
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(148,163,184,0.4);
+      background: radial-gradient(circle at top left, rgba(15,23,42,1), rgba(15,23,42,0.96));
+      padding: 1.4rem 1.4rem 1.6rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-grid-small {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .field {
+      font-size: 0.85rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .field label {
+      display: block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: rgba(148,163,184,0.95);
+      margin-bottom: 0.25rem;
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid rgba(148,163,184,0.45);
+      padding: 0.55rem 0.8rem;
+      font-size: 0.85rem;
+      background: radial-gradient(circle at top, rgba(15,23,42,0.96), rgba(15,23,42,0.94));
+      color: var(--text-main);
+      outline: none;
+      transition: border-color var(--transition-fast), box-shadow var(--transition-fast), transform var(--transition-fast), background var(--transition-fast);
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: rgba(148,163,184,0.9);
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      border-color: var(--accent-strong);
+      box-shadow: 0 0 0 1px rgba(249,184,74,0.35);
+      transform: translateY(-1px);
+      background: radial-gradient(circle at top, rgba(15,23,42,1), rgba(15,23,42,0.96));
+    }
+
+    .field textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    .contact-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-top: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      flex-wrap: wrap;
+    }
+
+    .contact-note { max-width: 18rem; }
+
+    .contact-sidebar {
+      border-radius: var(--radius-xl);
+      border: 1px solid rgba(148,163,184,0.4);
+      background: radial-gradient(circle at bottom right, rgba(15,23,42,1), rgba(15,23,42,0.96));
+      padding: 1.4rem 1.4rem 1.6rem;
+      box-shadow: var(--shadow-soft);
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    .sidebar-list { list-style: none; margin-bottom: 1rem; }
+
+    .sidebar-list li { margin-bottom: 0.55rem; }
+
+    .sidebar-label {
+      display: block;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: rgba(148,163,184,0.95);
+      margin-bottom: 0.2rem;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.3rem;
+    }
+
+    .pill {
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.45);
+      padding: 0.18rem 0.8rem;
+      font-size: 0.78rem;
+      background: radial-gradient(circle at top, rgba(15,23,42,1), rgba(15,23,42,0.9));
+      color: rgba(226,232,240,0.95);
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid rgba(148,163,184,0.35);
+      padding: 1.1rem 0 1.4rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background: radial-gradient(circle at bottom, #020617, #020617);
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+    }
+
+    .footer-links a:hover { color: var(--accent-strong); }
+
+    /* REVEAL ANIMATION */
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.in-view {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 920px) {
+      .hero-grid { grid-template-columns: minmax(0, 1fr); }
+      .hero-card { margin-top: 0.5rem; }
+      .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .contact-grid { grid-template-columns: minmax(0, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links,
+      .nav-cta { display: none; }
+      .hamburger { display: flex; }
+
+      .hero-banner { height: 190px; }
+
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .services-grid { grid-template-columns: minmax(0, 1fr); }
+      .contact-grid-small { grid-template-columns: minmax(0, 1fr); }
+    }
+
+    @media (max-width: 480px) {
+      .wrapper { padding: 0 1rem; }
+      .hero-banner { height: 170px; }
+    }
+    .hero-banner-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.hero-banner {
+  width: 100%;
+  height: auto;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;  /* पूरा image दिखे */
+}
+   .social-icon img {
+  width: 22px;
+  height: 22px;
+  margin-left: 10px;
+  filter: brightness(1) invert(0);
+  transition: 0.3s ease-in-out;
+}
+
+.social-icon img:hover {
+  transform: scale(1.15);
+  filter: brightness(1.4);
+}
+
+.hero-card {
+  background: linear-gradient(145deg, #0c0f1d, #101422);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 20px;
+  color: #fff;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+}
+
+/* HEADER LAYOUT FIX */
+.hero-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* AVATAR */
+.hero-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(249,184,74,0.16);
+  border: 2px solid rgba(249,184,74,0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-avatar-text {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--accent);
+  font-family: "DM Serif Display";
+}
+
+/* CHIP (right side highlight badge) */
+.hero-card-chip {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 16px;
+  padding: 8px 14px;
+  font-size: 0.78rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #dbe2f1;
+}
+
+.hero-card-chip-icon {
+  width: 10px;
+  height: 10px;
+  background: #f9b84a;
+  border-radius: 50%;
+}
+
+/* BODY TEXT */
+.hero-card-body p {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: #cdd3e0;
+  margin-bottom: 12px;
+}
+
+/* CONTACT SECTION */
+.hero-card-contact {
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.hero-card-contact div {
+  margin-bottom: 14px;
+}
+
+.sidebar-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #9aa1b4;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.hero-card-contact a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+/* APPOINTMENT BADGE */
+.hero-floating {
+  margin-top: 10px;
+  background: rgba(0,255,140,0.18);
+  border: 1px solid rgba(0,255,140,0.35);
+  padding: 7px 14px;
+  font-size: 0.78rem;
+  color: #c9ffe5;
+  border-radius: 14px;
+  width: max-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge-dot {
+  font-weight: bold;
+  color: #00ff87;
+}
+
+/* ------------------ MOBILE OPTIMIZATION ------------------ */
+@media (max-width: 480px) {
+
+  .hero-card {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .hero-avatar {
+    width: 52px;
+    height: 52px;
+  }
+
+  .hero-avatar-text {
+    font-size: 1rem;
+  }
+
+  .hero-card-chip {
+    width: 100%;
+    justify-content: center;
+    padding: 8px 10px;
+    font-size: 0.75rem;
+  }
+
+  .hero-card-header > div:first-child {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-card-body p {
+    font-size: 0.82rem;
+  }
+
+  .hero-card-contact div {
+    font-size: 0.82rem;
+  }
+
+  .hero-floating {
+    font-size: 0.75rem;
+    margin-top: 6px;
+  }
+}
+
+  </style>
+</head>
+<body>
+<div class="page-shell">
+  <!-- HEADER -->
+  <header>
+    <div class="wrapper">
+      <nav class="nav">
+        <a href="#home" class="logo">
+          <div class="logo-mark"><span>B</span></div>
+          <div>
+            <div class="logo-text-main">Adv. Bhuvnesh</div>
+            <div class="logo-text-sub">Delhi Districts &amp; High Court</div>
+          </div>
+        </a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#appointment">Appointment</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="nav-cta">
+          <span>📞 +91&nbsp;8810263040</span>
+          <button class="btn" onclick="window.location.href='tel:+918810263040'">
+            <span class="icon"></span><span>Call Now</span>
+          </button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+      </nav>
+
+      <!-- MOBILE NAV -->
+      <div class="mobile-nav" id="mobileNav">
+        <div class="mobile-nav-inner">
+          <div class="mobile-nav-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#appointment">Appointment</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="mobile-nav-bottom">
+            <div>
+              📞 +91 8810263040<br>
+              <span style="opacity:.85;">Mon–Sat · 10:00 AM – 6:30 PM</span>
+            </div>
+            <button class="btn" style="padding-inline:0.9rem;font-size:0.8rem;" onclick="window.location.href='tel:+918810263040'">
+              <span>Call Now</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- HERO + BANNER -->
+    <section class="hero">
+      <div class="wrapper">
+        <!-- BANNER PLACEHOLDER -->
+        <div class="hero-banner-wrapper reveal">
+  <div class="hero-banner">
+    <img src="new card.png" alt="">
+  </div>
+</div>
+
+
+        <div class="hero-grid">
+          <div class="reveal">
+            <div class="eyebrow">
+              <div class="eyebrow-dot"></div>
+              <span>Delhi Districts &amp; High Court Practice</span>
+            </div>
+            <h1 class="hero-title">
+              Focused legal representation<br>
+              in <span class="hero-highlight">family, civil &amp; criminal</span> matters.
+            </h1>
+            <p class="hero-subtitle">
+              Adv. Bhuvnesh represents clients before Delhi District Courts and the High Court.
+              Expert in cheque bounce and family court matters along with civil and criminal litigation.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn" onclick="document.getElementById('appointment').scrollIntoView({behavior:'smooth'})">
+                <span class="icon">✉</span>
+                <span>Book an Appointment</span>
+              </button>
+              <button class="btn-secondary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+                <span>View All Services</span><span>↗</span>
+              </button>
+            </div>
+
+            <div class="hero-meta">
+              <div class="hero-meta-block">
+                <div class="hero-meta-label">Practice</div>
+                <div class="hero-meta-value">Delhi District Courts &amp; High Court</div>
+              </div>
+              <div class="hero-meta-block">
+                <div class="hero-meta-label">Chamber</div>
+                <div class="hero-meta-value">Chamber No.607, Western Wing, Tis Hazari Court, Delhi</div>
+              </div>
+              <div class="hero-meta-block">
+                <div class="hero-meta-label">Client Focus</div>
+                <div class="hero-meta-value hero-meta-accent">Result oriented &amp; client-centric</div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-card reveal">
+            <div class="hero-card-header">
+              <div style="display:flex;align-items:center;gap:0.9rem;">
+                <div class="hero-avatar">
+                  <div class="hero-avatar-inner"></div>
+                  <div class="hero-avatar-text">BH</div>
+                </div>
+                <div>
+                  <div style="font-size:0.98rem;font-weight:500;">Adv. Bhuvnesh</div>
+                  <div style="font-size:0.84rem;color:var(--text-muted);">
+                    Practising Advocate – Delhi District Courts &amp; High Court
+                  </div>
+                </div>
+              </div>
+              <div class="hero-card-chip">
+                <div class="hero-card-chip-icon"></div>
+                <span>Expert in Cheque bounce &amp; Family court cases</span>
+              </div>
+            </div>
+
+            <div class="hero-card-body">
+              <p>
+                Matters are handled with detailed drafting, regular follow-ups and clear guidance on
+                every step – from notice to final order.
+              </p>
+              <p>
+                Consultations are by prior appointment only, so that adequate time can be devoted to understand each case.
+              </p>
+
+              <div class="hero-card-contact">
+                <div>
+                  <span class="sidebar-label">Phone</span>
+                  <a href="tel:+918810263040">+91 8810263040</a>
+                </div>
+                <div>
+                  <span class="sidebar-label">Email</span>
+                  <a href="mailto:Bhuvitagala7625@gmail.com">Bhuvitagala7625@gmail.com</a>
+                </div>
+                <div>
+                  <span class="sidebar-label">Office</span>
+                  K-61, Main Najafgarh Road, <br>Adhyapak Nagar, Nangloi,<br> New Delhi – 110041
+                </div>
+              </div>
+              <div class="hero-floating">
+                <span class="badge-dot">✓</span>
+                <span>By prior appointment only</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SHORT -->
+    <section id="about">
+      <div class="wrapper">
+        <div class="section-header reveal">
+          <div class="section-title-block">
+            <div class="section-kicker">Profile</div>
+            <h2 class="section-title">About the practice</h2>
+            <p class="section-subtitle">
+              The focus is on practical solutions – whether through litigation, mediation or settlement –
+              keeping clients informed at every stage of the case.
+            </p>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          Clients include individuals, families, professionals and small businesses.
+          Each matter is prepared with emphasis on facts, documents and relevant law,
+          so that the case is presented in the best possible manner before the court.
+          <div class="about-highlight">
+            Detailed case discussion, honest opinion on merits and transparent fee structure –
+            this forms the base of every engagement.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="wrapper">
+        <div class="section-header reveal">
+          <div class="section-title-block">
+            <div class="section-kicker">Services</div>
+            <h2 class="section-title">Legal services offered</h2>
+            <p class="section-subtitle">
+              All services have direct call support – you can connect instantly by tapping the “Call Now” button beside any service.
+            </p>
+          </div>
+        </div>
+
+        <div class="services-grid">
+          <!-- 1 -->
+          <div class="service-card reveal">
+            <div class="service-type">Cheque &amp; Family Court</div>
+            <div class="service-title">Expert in cheque bouncing cases and family court cases</div>
+            <p>End-to-end handling of Section 138 NI Act matters and contested family court disputes.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="service-card reveal">
+            <div class="service-type">Marriage</div>
+            <div class="service-title">Marriage registration</div>
+            <p>Assistance in documentation, filing and appearance for court / special marriage registration.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="service-card reveal">
+            <div class="service-type">Family law</div>
+            <div class="service-title">Mutual divorce</div>
+            <p>Filing and processing of mutual consent divorce petitions with clear documentation.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="service-card reveal">
+            <div class="service-type">Family law</div>
+            <div class="service-title">Maintenance cases</div>
+            <p>Representation in maintenance petitions and associated proceedings before all forums.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 5 -->
+          <div class="service-card reveal">
+            <div class="service-type">Family law</div>
+            <div class="service-title">Child custody</div>
+            <p>Custody, visitation and guardianship matters with focus on welfare of the child.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 6 -->
+          <div class="service-card reveal">
+            <div class="service-type">Execution</div>
+            <div class="service-title">Execution of orders &amp; decrees</div>
+            <p>Execution petitions for implementation of court orders, decrees and maintenance awards.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 7 -->
+          <div class="service-card reveal">
+            <div class="service-type">Family law</div>
+            <div class="service-title">All types of family cases</div>
+            <p>Contested and uncontested family disputes including divorce, restitution and related reliefs.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 8 -->
+          <div class="service-card reveal">
+            <div class="service-type">Civil cases</div>
+            <div class="service-title">Recovery suits</div>
+            <p>Money recovery suits and summary proceedings for dues arising out of loans and business transactions.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 9 -->
+          <div class="service-card reveal">
+            <div class="service-type">Civil cases</div>
+            <div class="service-title">Permanent injunction</div>
+            <p>Injunction suits to protect possession, status-quo and prevent unlawful interference.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 10 -->
+          <div class="service-card reveal">
+            <div class="service-type">Civil cases</div>
+            <div class="service-title">All types of civil cases</div>
+            <p>Complete range of civil litigation including property, partition, declaration and other disputes.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 11 -->
+          <div class="service-card reveal">
+            <div class="service-type">Criminal law</div>
+            <div class="service-title">138 NI Act cases</div>
+            <p>Section 138 Negotiable Instruments Act – cheque bounce complaints, defence and settlements.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 12 -->
+          <div class="service-card reveal">
+            <div class="service-type">Criminal law</div>
+            <div class="service-title">Domestic violence cases</div>
+            <p>Representation in domestic violence complaints and related reliefs under the DV Act.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 13 -->
+          <div class="service-card reveal">
+            <div class="service-type">Criminal law</div>
+            <div class="service-title">FIR quashing / anticipatory relief</div>
+            <p>Advisory and proceedings for quashing of FIRs and related pre-arrest remedies (as per case).</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 14 -->
+          <div class="service-card reveal">
+            <div class="service-type">Criminal law</div>
+            <div class="service-title">All types of criminal cases</div>
+            <p>Selected criminal matters including trial, bail and appeal depending on facts of the case.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 15 -->
+          <div class="service-card reveal">
+            <div class="service-type">Recovery</div>
+            <div class="service-title">Recovery of debt cases</div>
+            <p>Proceedings for recovery of loans, friendly finance and other outstanding dues.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 16 -->
+          <div class="service-card reveal">
+            <div class="service-type">Consumer</div>
+            <div class="service-title">Consumer court cases</div>
+            <p>Complaints before Consumer Commissions relating to deficiency in services or defective goods.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 17 -->
+          <div class="service-card reveal">
+            <div class="service-type">Mixed matters</div>
+            <div class="service-title">All types of civil &amp; criminal matters</div>
+            <p>End-to-end guidance in mixed disputes involving both civil and criminal aspects.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 18 -->
+          <div class="service-card reveal">
+            <div class="service-type">Mediation</div>
+            <div class="service-title">Mediation &amp; settlement</div>
+            <p>Assistance in negotiated settlements and mediation proceedings to resolve disputes amicably.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+
+          <!-- 19 -->
+          <div class="service-card reveal">
+            <div class="service-type">Marriage</div>
+            <div class="service-title">Court marriage</div>
+            <p>Court marriage / special marriage assistance including documentation and appearances.</p>
+            <div class="service-footer">
+              <span class="service-phone">📞 8810263040</span>
+              <button class="btn-call" onclick="window.location.href='tel:+918810263040'">Call Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPOINTMENT FORM (WHATSAPP) -->
+    <section id="appointment">
+      <div class="wrapper">
+        <div class="section-header reveal">
+          <div class="section-title-block">
+            <div class="section-kicker">Appointment</div>
+            <h2 class="section-title">Book an appointment</h2>
+            <p class="section-subtitle">
+              Fill this form with your basic details. On submitting, your information will open directly in WhatsApp chat
+              with Adv. Bhuvnesh so that you can confirm date and time.
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-grid">
+          <form class="contact-card reveal" id="appointmentForm">
+            <div class="contact-grid-small">
+              <div class="field">
+                <label for="appName">Full Name</label>
+                <input id="appName" type="text" placeholder="Enter your full name" required>
+              </div>
+              <div class="field">
+                <label for="appPhone">Phone Number</label>
+                <input id="appPhone" type="tel" placeholder="+91XXXXXXXXXX" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="appEmail">Email</label>
+              <input id="appEmail" type="email" placeholder="name@example.com" required>
+            </div>
+
+            <div class="field">
+              <label for="appMessage">Matter details</label>
+              <textarea id="appMessage" placeholder="Briefly describe your matter and preferred consultation time." required></textarea>
+            </div>
+
+            <div class="contact-footer">
+              <p class="contact-note">
+                Submitting this form will open WhatsApp with your details pre-filled. Appointment is confirmed only after response from the office.
+              </p>
+              <button class="btn" type="submit">
+                <span class="icon">➤</span>
+                <span>Submit Appointment</span>
+              </button>
+            </div>
+          </form>
+
+          <aside class="contact-sidebar reveal" id="contact">
+            <ul class="sidebar-list">
+              <li>
+                <span class="sidebar-label">Chamber Address</span>
+                Chamber No.607, Western Wing<br>
+                Tis Hazari Court, Delhi
+              </li>
+              <li>
+                <span class="sidebar-label">Office Address</span>
+                K-61, Main Najafgarh Road,<br>
+                Adhyapak Nagar, Nangloi,<br>
+                New Delhi – 110041
+              </li>
+              <li>
+                <span class="sidebar-label">Contact</span>
+                Phone: <a href="tel:+918810263040">+91 8810263040</a><br>
+                Email: <a href="mailto:Bhuvitagala7625@gmail.com">Bhuvitagala7625@gmail.com</a>
+              </li>
+              <li>
+                <span class="sidebar-label">Consultation Hours</span>
+                Monday – Saturday<br>
+                10:00 AM – 6:30 PM<br>
+                (By prior appointment)
+              </li>
+            </ul>
+
+            <div class="sidebar-list">
+              <span class="sidebar-label">Modes of consultation</span>
+              <div class="pill-row">
+                <span class="pill">In-chamber</span>
+                <span class="pill">Video call</span>
+                <span class="pill">Phone consultation</span>
+              </div>
+            </div>
+
+            <div class="sidebar-list">
+              <span class="sidebar-label">Useful to carry</span>
+              <div class="pill-row">
+                <span class="pill">Case papers</span>
+                <span class="pill">List of dates</span>
+                <span class="pill">Previous orders / notices</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrapper footer-inner">
+        
+        <div>
+            © <span id="year"></span> Adv. Bhuvnesh. All rights reserved.
+        </div>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#appointment">Appointment</a>
+            <a href="#contact">Contact</a>
+
+            <!-- Instagram Icon -->
+            <a href="https://www.instagram.com/adv.bhuvnesh/" target="_blank" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram">
+            </a>
+
+            <!-- Facebook Icon -->
+            <a href="https://www.facebook.com/share/19xBoFK31x/" target="_blank" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+
+<script>
+  // Year
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // Mobile nav
+  const hamburger = document.getElementById("hamburger");
+  const mobileNav = document.getElementById("mobileNav");
+
+  if (hamburger && mobileNav) {
+    hamburger.addEventListener("click", () => {
+      const open = mobileNav.classList.toggle("open");
+      hamburger.classList.toggle("is-open", open);
+    });
+
+    mobileNav.addEventListener("click", (e) => {
+      if (e.target.tagName === "A") {
+        mobileNav.classList.remove("open");
+        hamburger.classList.remove("is-open");
+      }
+    });
+  }
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll(".reveal");
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.16 }
+  );
+  revealEls.forEach((el) => observer.observe(el));
+
+  // Appointment form -> WhatsApp
+  const appointmentForm = document.getElementById("appointmentForm");
+  appointmentForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("appName").value.trim();
+    const phone = document.getElementById("appPhone").value.trim();
+    const email = document.getElementById("appEmail").value.trim();
+    const message = document.getElementById("appMessage").value.trim();
+
+    const whatsappNumber = "918810263040"; // without + sign
+    let text =
+      "New Appointment Request%0A%0A" +
+      "*Name:* " + encodeURIComponent(name) + "%0A" +
+      "*Phone:* " + encodeURIComponent(phone) + "%0A" +
+      "*Email:* " + encodeURIComponent(email) + "%0A" +
+      "*Matter Details:* " + encodeURIComponent(message) + "%0A%0A" +
+      "Sent from website.";
+
+    const url = "https://wa.me/" + whatsappNumber + "?text=" + text;
+    window.open(url, "_blank");
+  });
+</script>
+</body>
+</html>
